@@ -1,0 +1,7 @@
+@muscles.map do | muscle |
+  {
+  id: muscle.id,
+  name: muscle.name,
+  image_url: muscle.image_url
+  }
+end
