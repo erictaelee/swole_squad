@@ -4,7 +4,7 @@ class Api::MusclesController < ApplicationController
     puts response.parse
     muscles = response.parse["results"]
     
-    muscles.each do |muscle|
+    @muscles.each do |muscle|
       p muscle["name"]
     end
     
@@ -15,12 +15,17 @@ class Api::MusclesController < ApplicationController
   end
 
   def show
+    @muscle = Muscle.find_by(id: params[:id])
+    render 'show.json.jb'
 
   end
 
-  def create
+  # def create
+  #   @muscle = Muscle.create(
 
-  end
+  #   )
+
+  # end
 
   # def update
 
