@@ -1,1 +1,1 @@
-{message: 'hi'}
+render partial: "muscle.json.jb", locals: {muscle: @muscle}

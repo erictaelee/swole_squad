@@ -8,8 +8,17 @@
 
 
 muscles = Muscle.create([name: "Abs", image_url: ""])
+muscles = Muscle.create([name: "Biceps", image_url: ""])
 muscles = Muscle.create([name: "Chest", image_url: ""])
-muscles = Muscle.create([name: "Bicepts", image_url: ""])
+muscles = Muscle.create([name: "Triceps", image_url: ""])
+muscles = Muscle.create([name: "Traps", image_url: ""])
+muscles = Muscle.create([name: "Quadriceps", image_url: ""])
+muscles = Muscle.create([name: "Lats", image_url: ""])
+muscles = Muscle.create([name: "Calves", image_url: ""])
+muscles = Muscle.create([name: "Glutes", image_url: ""])
+muscles = Muscle.create([name: "Hamstrings", image_url: ""])
+muscles = Muscle.create([name: "Shoulder", image_url: ""])
+muscles = Muscle.create([name: "Forearms", image_url: ""])
 
 
 
