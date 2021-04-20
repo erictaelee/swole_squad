@@ -7,12 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# muscles = Muscle.create([{name: "Abs", image_url: ""}]),
-# muscles = Muscle.create([{name: "Bicepss", image_url: ""}]),
-# muscles = Muscle.create({name: "Triceps", image_url: ""},
-# muscles = Muscle.create({name: "Deltoids", image_url: ""},
-# muscles = Muscle.create({name: "Pectorialis", image_url: ""},
-# muscles = Muscle.create({name: "Quadriceps", image_url: ""}]),
+muscles = Muscle.create([name: "Abs", image_url: ""])
+muscles = Muscle.create([name: "Chest", image_url: ""])
+muscles = Muscle.create([name: "Bicepts", image_url: ""])
+
 
 
 # exercise = Exercise.create(name: "Push Up", description: "Very common chester exercise", equipment: ),
