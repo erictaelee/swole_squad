@@ -1,1 +1,6 @@
-render partial: "muscle.json.jb", locals: {muscle: @muscle}
+{
+  id: @muscle.id,
+  name: @muscle.name,
+  image_url: @muscle.image_url,
+ 
+}
