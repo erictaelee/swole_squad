@@ -22,11 +22,18 @@ muscles = Muscle.create([name: "Forearms", image_url: ""])
 
 
 
-# exercise = Exercise.create(name: "Push Up", description: "Very common chester exercise", equipment: ),
-# exercise = Exercise.create(name: "Crunches", description: "Very common abs exercise", equipment: ),
-# exercise = Exercise.create(name: "Military Press", description: "", equipment: ),
-# exercise = Exercise.create(name: "Side Raises", description: "", equipment: ),
-# exercise = Exercise.create(name: "Curl", description: "", equipment: )
+exercise = Exercise.create([name: "Push Up", description: "Very common chest exercise", equipment: "", muscle_primary: "", muscle_secondary: ""])
+exercise = Exercise.create([name: "Hammercurls", description: "Hold two dumbbells and sit on a bench with a straight back, the shoulders are slightly rolled backwards. Your pals point to your body. Bend the arms and bring the weight up with a fast movement. Don't rotate your hands, as with the curls. Without any pause bring the dumbbell down with a slow, controlled movement.
+
+  Don't swing your body during the exercise, the biceps should do all the work here. The elbows are at your side and don't move.", equipment: "", muscle_primary: "", muscle_secondary: ""])
+exercise = Exercise.create([name: "Arnold Shoulder Press", description: "Very common shoulder exercise.
+
+ 
+
+  As shown here: https://www.youtube.com/watch?v=vj2w851ZHRM
+  
+  ", equipment: "", muscle_primary: "", muscle_secondary: ""])
+
 
 
 

@@ -1,1 +1,9 @@
-{message: "push ups"}
+@exercises.map do |exercise| {
+  id: exercise.id,
+  name: exercise.name,
+  description: exercise.description,
+  equipment: exercise.equipment,
+  muscle_primary: exercise.muscle_primary,
+  muscle_secondary: exercise.muscle_secondary,
+}
+end
