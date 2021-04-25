@@ -1,15 +1,15 @@
 class Api::ExercisesController < ApplicationController
   def index
 
-    response = HTTP.get("https://wger.de/api/v2/exercise/?format=json")
+    response = HTTP.get("https://wger.de/api/v2/exercise/?format=json").parse
     # render json: response.parse
 
-    @exercises = response.parse["results"]
+   p @exercises = response["name"]
     
     
-    @exercises.each do |exercise|
-      puts exercise["name"]
-    end
+    # @exercises.each do |exercise|
+    #   puts exercise["name"]
+    # end
 
     # @exercises = Exercise.all
     # render "index.json.jb"
