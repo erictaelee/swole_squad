@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
     
+    get "/carted_exercises" => "carted_exercises#index"
     post "/carted_exercises" => "carted_exercises#create"
   end
 end

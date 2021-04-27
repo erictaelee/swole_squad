@@ -1,0 +1,10 @@
+@carted_exercises.map do |carted_exercise|
+{
+  id: carted_exercise.id,
+  user_id: carted_exercise.user_id,
+  muscle_id: carted_exercise.muscle_id,
+  exercise_id: carted_exercise.exercise_id,
+  status: carted_exercise.status,
+  order_id: carted_exercise.order_id,
+}
+end

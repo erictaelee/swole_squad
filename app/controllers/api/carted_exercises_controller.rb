@@ -1,4 +1,10 @@
 class Api::CartedExercisesController < ApplicationController
+  def index
+    # @carted_exercises = CartedExercise.where(status: "carted", user_id: current_user.id)
+    @carted_exercises = current_user.carted_exercises.where(status: "carted")
+    render 'index.json.jb'
+  end
+  
   def create
 
     @carted_exercise = CartedExercise.new(
