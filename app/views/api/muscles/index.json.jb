@@ -2,6 +2,7 @@
   {
   id: muscle.id,
   name: muscle.name,
-  image_url: muscle.image_url
+  image_url: muscle.image_url,
+  exercises: muscle.exercises
   }
 end
