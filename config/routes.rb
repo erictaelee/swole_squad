@@ -15,10 +15,13 @@ Rails.application.routes.draw do
     post "/exercises" => "exercises#create"
     patch "/exercises/:id" => "exercises#edit"
     delete "/exercises/:id" => "exercises#destroy"
+    
+    post "/orders" => "orders#create"
 
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
     
+
     get "/carted_exercises" => "carted_exercises#index"
     post "/carted_exercises" => "carted_exercises#create"
   end

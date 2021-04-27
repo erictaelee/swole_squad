@@ -1,0 +1,6 @@
+{
+  id: @order.id,
+  user_id: @order.user_id,
+  exercise_id: @order.exercise_id,
+  total: @order.total,
+}
