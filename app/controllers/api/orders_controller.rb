@@ -1,13 +1,20 @@
 class Api::OrdersController < ApplicationController
   def index
-    @orders = Order.all
-    render 'index.json.jb'
-  end
-  
-  def create
     p "current_user"
     p current_user
     p "current_user"
+
+
+    @orders = current_user.orders
+    render 'index.json.jb'
+  end
+  
+  def show
+    @order = Order.find_by(id: params[:id])
+    render 'show.json.jb'
+  end
+
+  def create
 
     exercise = Exercise.find_by(id: params[:exercise_id])
     # total_exercise = params[:quantity].to_i * exercise
@@ -21,4 +28,5 @@ class Api::OrdersController < ApplicationController
     @order.save
     render 'show.json.jb'
   end
+  
 end
