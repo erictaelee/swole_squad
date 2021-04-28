@@ -1,0 +1,9 @@
+@orders.map do |order|
+  {
+    id: order.id,
+    exercise_id: order.exercise_id,
+    quantity: order.quantity,
+    total: order.total,
+
+  }
+end

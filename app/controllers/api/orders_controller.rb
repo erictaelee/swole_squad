@@ -1,4 +1,9 @@
 class Api::OrdersController < ApplicationController
+  def index
+    @orders = Order.all
+    render 'index.json.jb'
+  end
+  
   def create
     p "current_user"
     p current_user
