@@ -1,9 +1,17 @@
 class Api::OrdersController < ApplicationController
   def create
+    p "current_user"
+    p current_user
+    p "current_user"
+
+    exercise = Exercise.find_by(id: params[:exercise_id])
+    # total_exercise = params[:quantity].to_i * exercise
+
     @order = Order.new(
-      exercise_id: 14,
-      user_id: 3,
-      total: 2
+      exercise_id: params[:exercise_id],
+      user_id: current_user.id,
+      quantity: params[:quantity],
+      total: 1
     )
     @order.save
     render 'show.json.jb'
