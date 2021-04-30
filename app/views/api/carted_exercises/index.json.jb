@@ -3,6 +3,8 @@
   id: carted_exercise.id,
   user_id: carted_exercise.user_id,
   muscle_id: carted_exercise.muscle_id,
+  exercise: carted_exercise.exercise,
+  muscle: carted_exercise.muscle,
   exercise_id: carted_exercise.exercise_id,
   status: carted_exercise.status,
   order_id: carted_exercise.order_id,
