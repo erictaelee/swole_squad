@@ -6,7 +6,7 @@ Swole Squad is a fitness app that helps you build muscles tailored to your body 
 
 Future Functions to add:
 
-Add meal prep functions
-Create a dashboard for the users and log workouts
-Rate trainers
-Search trainers by location
+- Add meal prep functions
+- Create a dashboard for the users and log workouts
+- Rate trainers
+- Search trainers by location
