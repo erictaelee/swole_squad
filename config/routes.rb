@@ -27,4 +27,6 @@ Rails.application.routes.draw do
     get "/carted_exercises" => "carted_exercises#index"
     post "/carted_exercises" => "carted_exercises#create"
   end
+  get '*path' => "application#index"
+  
 end
